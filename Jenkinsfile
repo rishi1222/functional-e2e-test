@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:latest' } }
+    agent { kubernetes { image 'maven:latest' } }
     stages {
         stage('build') {
             steps {
