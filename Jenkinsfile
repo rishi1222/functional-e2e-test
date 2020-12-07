@@ -10,10 +10,6 @@ metadata:
     app: jenkins
 spec:
   containers:
-  -name: jnlp
-   env:
-   - name: CONTAINER_ENV_VAR
-     value: jnlp
   - name: maven
     image: maven:latest
     command:
