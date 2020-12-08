@@ -11,7 +11,7 @@ metadata:
 spec:
   containers:
   - name: maven
-    image: maven:latest
+    image: http://localhost:5000/maven:latest
     command:
     - cat
     tty: true
