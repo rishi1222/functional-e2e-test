@@ -21,6 +21,18 @@ spec:
     ports:
     - containerPort: 8010
     resources: {}
+  - name: productcatalogue  
+    image: localhost:5000/productcatalogue:latest
+    imagePullPolicy: ""
+    ports:
+    - containerPort: 8020
+    resources: {} 
+  - name: stockmanager  
+    image: localhost:5000/stockmanager:latest
+    imagePullPolicy: ""
+    ports:
+    - containerPort: 8030
+    resources: {}        
   restartPolicy: Always
   serviceAccountName:     
   imagePullSecrets:
@@ -33,6 +45,13 @@ spec:
             steps {
                 container('maven') {
                     sh 'mvn -version'
+                }
+            }
+        }
+        stage('e2e test') {
+            steps {
+                container('maven') {
+                    sh 'mvn clean test'
                 }
             }
         }
