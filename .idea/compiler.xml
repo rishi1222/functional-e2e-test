@@ -6,11 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="functiona-e2e-test" />
         <module name="functional-e2e-test" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="functional-e2e-test" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

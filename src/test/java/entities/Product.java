@@ -1,4 +1,4 @@
-package test.java.entities;
+package entities;
 
 import java.math.BigDecimal;
 
@@ -47,3 +47,4 @@ public class Product {
         return amountAvailable;
     }
 }
+

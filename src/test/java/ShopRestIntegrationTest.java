@@ -1,4 +1,3 @@
-package test.java;
 
 import io.restassured.http.ContentType;
 import org.junit.Test;
@@ -40,4 +39,5 @@ public class ShopRestIntegrationTest {
                 .body("[0].amountAvailable", is(5));
     }
 }
+
 
