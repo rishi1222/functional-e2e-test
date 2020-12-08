@@ -15,6 +15,14 @@ spec:
     command:
     - cat
     tty: true
+  - name: shopfront  
+    image: localhost:5000/shopfront:latest
+    imagePullPolicy: ""
+    ports:
+    - containerPort: 8010
+    resources: {}
+  restartPolicy: Always
+  serviceAccountName:     
   imagePullSecrets:
   - name: regcred    
 """
