@@ -12,11 +12,11 @@ spec:
   containers:
   - name: maven
     image: localhost:5000/my-maven:latest
-  imagePullSecrets:
-  - name: regcred    
     command:
     - cat
     tty: true
+  imagePullSecrets:
+  - name: regcred    
 """
         }
     }
