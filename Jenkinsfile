@@ -11,7 +11,9 @@ metadata:
 spec:
   containers:
   - name: maven
-    image: http://localhost:5000/my-maven:latest
+    image: localhost:5000/my-maven:latest
+  imagePullSecrets:
+  - name: regcred    
     command:
     - cat
     tty: true
